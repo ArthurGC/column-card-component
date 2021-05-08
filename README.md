@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-Declare variables and work with them is easy in SASS. Besides, you do not need `css:root` to declare or use them.
+Declare variables and work with them is easy in SASS. Besides, you do not need `:root` to declare or use them.
 
 ```css
 // Variables
