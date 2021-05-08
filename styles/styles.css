@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5rem 1.5rem;
+}
+
+.card {
+  padding: 3rem 0;
+  padding-left: 3rem;
+  padding-right: 3.5rem;
+  max-width: 327px;
+}
+
+.card h1 {
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+.card p {
+  color: rgba(255, 255, 255, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9rem;
+  line-height: 2;
+}
+
+.btn {
+  font-size: 0.9rem;
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 2rem;
+  padding: 1rem 1.8rem;
+  border: none;
+  background: #f2f2f2;
+  margin-top: .5rem;
+  cursor: pointer;
+  -webkit-animation-duration: .8s;
+          animation-duration: .8s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.card-left {
+  background: #e38826;
+  border-top-left-radius: .8rem;
+  border-top-right-radius: .8rem;
+}
+
+.card-middle {
+  background: #006970;
+}
+
+.card-right {
+  background: #004241;
+  border-bottom-left-radius: .8rem;
+  border-bottom-right-radius: .8rem;
+}
+
+.btn-left {
+  color: #e38826;
+}
+
+.btn-left:hover {
+  -webkit-animation-name: btnleft;
+          animation-name: btnleft;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes btnleft {
+  100% {
+    -webkit-box-shadow: inset 9rem 0 0px 0px #e38826, 0 0 0 2pt #f2f2f2;
+            box-shadow: inset 9rem 0 0px 0px #e38826, 0 0 0 2pt #f2f2f2;
+    color: #f2f2f2;
+  }
+}
+
+@keyframes btnleft {
+  100% {
+    -webkit-box-shadow: inset 9rem 0 0px 0px #e38826, 0 0 0 2pt #f2f2f2;
+            box-shadow: inset 9rem 0 0px 0px #e38826, 0 0 0 2pt #f2f2f2;
+    color: #f2f2f2;
+  }
+}
+
+.btn-middle {
+  color: #006970;
+}
+
+.btn-middle:hover {
+  -webkit-animation-name: btnmiddle;
+          animation-name: btnmiddle;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes btnmiddle {
+  100% {
+    -webkit-box-shadow: inset 9rem 0 0px 0px #006970, 0 0 0 2pt #f2f2f2;
+            box-shadow: inset 9rem 0 0px 0px #006970, 0 0 0 2pt #f2f2f2;
+    color: #f2f2f2;
+  }
+}
+
+@keyframes btnmiddle {
+  100% {
+    -webkit-box-shadow: inset 9rem 0 0px 0px #006970, 0 0 0 2pt #f2f2f2;
+            box-shadow: inset 9rem 0 0px 0px #006970, 0 0 0 2pt #f2f2f2;
+    color: #f2f2f2;
+  }
+}
+
+.btn-right {
+  color: #004241;
+}
+
+.btn-right:hover {
+  -webkit-animation-name: btnright;
+          animation-name: btnright;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes btnright {
+  100% {
+    -webkit-box-shadow: inset 9rem 0 0px 0px #004241, 0 0 0 2pt #f2f2f2;
+            box-shadow: inset 9rem 0 0px 0px #004241, 0 0 0 2pt #f2f2f2;
+    color: #f2f2f2;
+  }
+}
+
+@keyframes btnright {
+  100% {
+    -webkit-box-shadow: inset 9rem 0 0px 0px #004241, 0 0 0 2pt #f2f2f2;
+            box-shadow: inset 9rem 0 0px 0px #004241, 0 0 0 2pt #f2f2f2;
+    color: #f2f2f2;
+  }
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.attribution a {
+  color: #e38826;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #006970;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 100vh;
+  }
+  .card {
+    padding-right: 3.5rem;
+    max-width: 300px;
+  }
+  .card-left {
+    background: #e38826;
+    border-bottom-left-radius: .8rem;
+    border-top-right-radius: 0;
+  }
+  .card-middle {
+    background: #006970;
+    padding-right: 3.2rem;
+  }
+  .card-right {
+    background: #004241;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+    padding-right: 3rem;
+  }
+  .btn {
+    margin-top: 4rem;
+  }
+  .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    font-size: 1.5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

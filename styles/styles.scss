@@ -1,0 +1,186 @@
+// - Mobile: 375px
+// - Desktop: 1440px
+//Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+// Variables
+$color-bright-orange: hsl(31, 77%, 52%); 
+$color-dark-cyan: hsl(184, 100%, 22%);
+$color-very-dark-cyan: hsl(179, 100%, 13%);
+
+// paragraphs
+$color-trans-white: hsla(0, 0%, 100%, 0.75); 
+
+//background, headings, buttons
+$color-light-gray: hsl(0, 0%, 95%); 
+
+//Fonts
+$font-big-display: 'Big Shoulders Display', cursive;
+$font-lexend: 'Lexend Deca', sans-serif;
+$font-size-h1: 2.5rem;
+$font-size-p: .9rem;
+$font-size-btn: 1.1rem;
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: $color-light-gray;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 1.5rem;
+}
+.card{
+    padding: 3rem 0;
+    padding-left: 3rem;
+    padding-right: 3.5rem;
+    max-width: 327px;
+   h1{
+    color: $color-light-gray;
+       font-family: $font-big-display;
+       text-transform: uppercase;
+       font-size: $font-size-h1;
+   }
+   p{
+    color: $color-trans-white;
+       font-family: $font-lexend;
+       font-size: $font-size-p;
+       line-height: 2;
+   }
+}
+.btn{
+    font-size: $font-size-p;
+    font-family: $font-lexend;
+    border-radius: 2rem;
+    padding: 1rem 1.8rem;
+    border:none;
+    background: $color-light-gray;
+    margin-top: .5rem;
+    cursor: pointer;
+    animation-duration: .8s;
+    box-sizing:border-box;
+}
+
+.card-left{
+    background: $color-bright-orange;
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+}
+.card-middle{
+    background: $color-dark-cyan;
+}
+.card-right{
+    background: $color-very-dark-cyan;
+    border-bottom-left-radius: .8rem;
+    border-bottom-right-radius: .8rem;
+}
+
+.btn-left{
+    color: $color-bright-orange;
+}
+.btn-left:hover{
+    animation-name: btnleft;
+    animation-fill-mode: forwards;
+}
+@keyframes btnleft {
+    100%{
+        box-shadow: inset 9rem 0 0px 0px $color-bright-orange,
+        0 0 0 2pt $color-light-gray;
+        color: $color-light-gray;
+    }
+}
+
+.btn-middle{
+    color: $color-dark-cyan;
+}
+.btn-middle:hover{
+    animation-name: btnmiddle;
+    animation-fill-mode: forwards;
+}
+@keyframes btnmiddle {
+    100%{
+        box-shadow: inset 9rem 0 0px 0px $color-dark-cyan,
+        0 0 0 2pt $color-light-gray;
+        color: $color-light-gray;
+    }
+}
+
+.btn-right{
+    color: $color-very-dark-cyan;
+}
+.btn-right:hover{
+    animation-name: btnright;
+    animation-fill-mode: forwards;
+}
+@keyframes btnright{
+    100%{
+        box-shadow: inset 9rem 0 0px 0px $color-very-dark-cyan,
+        0 0 0 2pt $color-light-gray;
+        color: $color-light-gray;
+    }
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+
+  .attribution a {
+    color: $color-bright-orange;
+    text-decoration: none;
+    &:hover{
+        color: $color-dark-cyan;
+    }
+  }
+
+@media (min-width: 1440px) {
+    .container{
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .card{
+        padding-right: 3.5rem;
+        max-width: 300px;
+    }
+
+    .card-left{
+        background: $color-bright-orange;
+        border-bottom-left-radius: .8rem;
+        border-top-right-radius: 0;
+    }
+
+    .card-middle{
+        background: $color-dark-cyan;
+        padding-right: 3.2rem;
+    }
+
+    .card-right{
+        background: $color-very-dark-cyan;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: .8rem;
+        border-bottom-right-radius: .8rem;
+        padding-right: 3rem;
+    }
+
+    .btn{
+        margin-top: 4rem;
+    }
+
+    .attribution {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 1.5rem;
+      }
+
+}
